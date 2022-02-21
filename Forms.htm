@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <!--Using CSS-->
+     <link rel="stylesheet" type="text/css" href="yo.css">
+
+     
+    <!--Ading js in Head Of HTML-->
+    <script src="Javascript/alert.js"> </script>
+
+    <!--If a browser is not able to or haven't enabled , script , then display a particular message informing about these issue-->
+    <noscript> Please , enable Javascript!
+    <pre> Go to Chrome ➡
+              Security & Privacy Setting ➡
+                                        Enable Javascript
+    </pre>    
+    </noscript>
+
+</head>
+<body>
+    
+    <form action="POST" action="">
+
+        <h1> Information Form </h1>
+        <DIV>
+            UserName (Compulsorily Fill Your Name): 
+            <input type="text" required>
+        </DIV>
+        <br>
+
+        <div>
+            Favourite Colour : <input type="color">
+
+        </div>
+        <br>
+
+        <div>
+            Date Of Birth : <input type="date">
+        </div>
+        <br>
+        
+        <div>
+            Email : <input type="email" placeholder="abc@gmail.com">
+        </div>
+        <br>
+
+        <div>
+            Hidden : <input type="hidden" value="I am sending your data, without your authorization">
+        </div>
+        <br>
+
+        <div>
+            Contact Number : <input type="number">
+        </div>
+        <br>
+
+        <div>
+            Password : <input type="password">
+        </div>
+        <br>
+
+        <div>
+            Time : <input type="time">
+        </div>
+        <br>
+
+        <div>
+            Website Link : <input type="url">
+        </div>
+        <br>
+
+        <div>
+            Range Of Price (99 to 999) : <input type="range" min="99" max="999">
+        </div>
+
+        <div>
+            <pre>
+            <input type="submit" >     <input type="reset">
+            </pre>
+        </div>
+
+        <form enctype="multipart/form-data">
+            Upload First Experiment :
+                <input type="file">
+
+                <br><br>
+
+                Upload 5 Files of Assignment From 1 to 5 :
+                <input type="file" multiple>
+       
+
+       <br>
+       <DIV>
+           Username (Using "value") : <input type="text" value="Deepak H Chourasiya">
+       </DIV>
+       <br>
+
+       <div>
+           Username (Using "readonly") : <input type="text" readonly>
+           <!--We can only read it, can't make changes-->
+       </div>
+       <br>
+
+       <div>
+           Username (Using "readonly and value") : <input type="text" value="Your Own It's Me Deepak"  readonly>
+       </div>
+       <br>
+
+       <div>
+           Name (Using "disabled") : <input type="text" disabled>
+       </div>
+       <br>
+
+       <div>
+        Brother's Name (Using "disabled") : <input type="text" value="Suraj H Chourasiya" disabled>
+       </div>
+       <br>
+
+       <div>
+           UserName (size = '40') : <input type="text" size="40">
+       </div>
+       <br>
+
+       <div>
+           UserName (Only 20 letters can be Entered) : <input type="text" minlength="5"  maxlength="20" size="40">
+       </div>
+       <br>
+
+       <div>
+           UserName (Atleast three letters should be Entered) : <input type="text" minlength="3">
+       </div>
+       <br>
+
+       <div>
+           Enter Number Only Between 20 and 80 : <input type="number" min="20" max="80">
+       </div>
+       <br>
+
+       <div>
+           Date (Date Range will be available from 20-2-22 to 16-3-22 only): <input type="date" min="2022-02-20" max="2022-03-16">
+       </div>
+       <br>
+
+       <div>
+           Table of 10 : <input type="number" value="10" step="10">
+       </div>
+       <br>
+
+       <div style="border : 1px solid red">
+           Legend's Name (Cursor will point automatically - autofocus): <input type="text" autofocus>
+       </div>
+       <br>
+
+       <div>
+           Your Name (Field will get fill by itself only, if you have already filled your name earlier): <input type="text" autocomplete="on">
+       </div>
+       <br>
+
+       <div>
+           name - used for ease of Backend Developer, so he can easily distiguish between the field or of same type input.
+           <br>
+           First Name : <input type="text" name="First_Name">
+           <br>
+           Middle Name : <input type="text" name="Middle_Name">
+           <br>
+           Last Name : <input type="text" name="Last_Name">
+           <br>
+        </div>
+        <br>
+
+        <hr>
+        <div>
+            Why Do You Wanna Join Me : <br>
+            <textarea rows="10" cols="60">Yes , I wanna join you because , </textarea>
+        </div>
+        <br>
+
+        <hr>
+        <div>
+            Your Feedback : <br>
+            <textarea rows="8" cols="100" placeholder="Example : Deepak, your website is mind blowing, .........."></textarea>
+        </div>
+        <br>
+
+        <input type="image" src="https://t3.ftcdn.net/jpg/00/26/06/02/360_F_26060298_S8Mxr8UxWy7pBzOt4STyeXfmSBqjc7gv.jpg" width="100" height="50">
+        <br>
+        <hr>
+
+        Select Only One From The Following :
+        <select>
+            <optgroup label="Programming Languages">
+                <option value="1"> Java </option>
+                <option value="2"> C </option>
+                <option value="3"> C++ </option>
+                <option value="4"> Python </option>
+                <option value="5"> Kotlin </option>
+                <option value="6"> Ruby </option>
+                <option value="7"> Others </option>
+            </optgroup>
+
+            <optgroup label="Online Judges">
+                <option value="1" selected> Leetcode </option>     <!--Default Selected-->
+                <option value="2"> Interviewbit </option>
+                <option value="3"> HackerRank </option>
+                <option value="4"> CodeChef </option>
+                <option value="5"> CodeForces </option>
+                <option value="6"> Geeks For Geeks </option>
+                <option value="7"> Others </option>
+            </optgroup>
+
+            <optgroup label="Favourite Rapper">
+                <option value="2"> Deepak </option>
+                <option value="2"> Of Course, it's Deepak </option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        You Can Select Multiple Options From The Following : <br>
+        <select size="8" multiple>
+            <optgroup label="Programming Languages">
+                <option value="1"> Java </option>
+                <option value="2"> C </option>
+                <option value="3"> C++ </option>
+                <option value="4"> Python </option>
+                <option value="5"> Kotlin </option>
+                <option value="6"> Ruby </option>
+                <option value="7"> Others </option>
+            </optgroup>
+
+            <optgroup label="Online Judges">
+                <option value="1"> Leetcode </option>
+                <option value="2"> Interviewbit </option>
+                <option value="3"> HackerRank </option>
+                <option value="4"> CodeChef </option>
+                <option value="5"> CodeForces </option>
+                <option value="6"> Geeks For Geeks </option>
+                <option value="7"> Others </option>
+            </optgroup>
+
+            <optgroup label="Favourite Rapper">
+                <option value="1"> Deepak </option>
+                <option value="2" selected> Of Course, it's Deepak </option>    <!--Default Selected-->
+            </optgroup>
+        </select>
+        <hr>
+
+        <!--value used for backend, for ease of identification-->
+        <b> Gender : </b>
+        Male : <input type="radio" name="Gender" value="Aadmi" checked>  
+        Female : <input type="radio" name="Gender" value="Aurat">
+        Others : <input type="radio" name="Gender" value="koi aur">
+        Don't want to disclose : <input type="radio" name="Gender" value="kaiko bataau">
+        <br> <br>
+
+        <b> Interests : </b>
+        Rapping : <input type="radio" name="hobbies" value="fast singing">
+        Dancing : <input type="radio" name="hobbies" value="nrutya" checked>  <!--Default Selected-->
+        Acting : <input type="radio" name="hobbies" value="kalaakaari">
+        Song Writing : <input type="radio" name="hobbies" value="Geetkaar">
+        <br>
+        <hr>
+
+        <!--Checkbox-->
+        <b> What Do You Wanna Be ? </b>
+        <br>
+        <input type="checkbox" name="Interests"> Rapper        
+        <input type="checkbox" name="Interests"> Dancer       
+        <input type="checkbox"> Actor         
+        <input type="checkbox"> Song Writer
+        <hr>
+        
+    </form>
+
+</body>
+</html>

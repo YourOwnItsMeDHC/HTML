@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tables Section
+        </title>
+        <link rel ="icon" href="https://i.pinimg.com/736x/5a/0c/7b/5a0c7b76e2a8bcdbe571c5ba916f93fe.jpg">
+        <body>
+            <table border="1">
+                <caption> Table Example </caption>
+               <thead style="color : red;">
+                   <tr>
+                    <th> Row⬇/Column➡ </th>
+                    <th>Column 1 </th>
+                    <th>Column 2 </th>
+                    <th>Coulmn 3 </th>
+                  </tr>
+                </thead>
+
+                <tbody style = "color : blue;">
+                <tr>
+                    <th> Row 1 </th>
+                    <td> Cell 1 </td>
+                    <td> Cell 2 </td>
+                    <td> Cell 3 </td>
+                </tr>
+                <tr>
+                    <th> Row 2 </th>
+                    <td> Cell 4 </td>
+                    <td> Cell 5 </td>
+                    <td> Cell 6 </td>
+                </tr>
+                <tr>
+                    <th> Row 3 </th>
+                    <td> Cell 7 </td>
+                    <td> Cell 8 </td>
+                    <td> Cell 9 </td>
+                </tr>
+                </tbody>
+
+                <tfoot style="color : red;">
+                    <tr>
+                     <th> Row⬇/Column➡ </th>
+                     <th>Column 1 </th>
+                     <th>Column 2 </th>
+                     <th>Coulmn 3 </th>
+                   </tr>
+                </tfoot>
+            </table>
+
+            <hr>
+            <!--Table RowSpan ColSpan Example - 1-->
+            <table border = "1">
+                <tr>
+                    <th colspan = '2'> Name </th>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td>P</td>
+                    <td>A</td>
+                    <td>K</td>
+                </tr>
+
+                <tr>
+                    <td>C</td>
+                    <td>H</td>
+                    <td>O</td>
+                </tr>
+
+                <tr>
+                    <td>U</td>
+                    <td>R</td>
+                    <td>A</td>
+                </tr>
+            </table>
+        
+            <hr>
+            <!--Table RowSpan ColSpan Example - 2-->
+            <table border = "2">
+                <tr>
+                   <th rowspan = "2"> April </th>
+                   <td> Data </td>
+                   <td> Data </td>
+                </tr>
+
+                <tr>
+                    <td> Data </td>
+                    <td> Data </td>
+                </tr>
+
+                <tr>
+                    <td> Data </td>
+                    <td> Data </td>
+                    <td> Data </td>
+                </tr>
+
+                <tr>
+                    <td> Data </td>
+                    <td> Data </td>
+                    <td> Data </td>
+                </tr>
+            </table>
+
+            <hr>
+
+             <!--Table RowSpan ColSpan Example - 2-->
+             <table border = "10">
+                 <tr>
+                     <th colspan = "3"> 2022 </th>
+                 </tr>
+
+                 <tr>
+                    <td> Data </td>
+                    <td> Data </td>
+                    <td> Data </td>
+                 </tr>
+
+                 <tr>
+                     <th rowspan="2" colspan = "2"> FIESTA </th>
+                     <td> data </td>
+                 </tr>
+
+                 <tr>
+                    <td> Data </td>
+                 </tr>
+
+                 <tr>
+                    <td> Data </td>
+                    <td> Data </td>
+                    <td> Data </td>
+                 </tr>
+             </table>
+
+             <hr>
+
+             <!--Nested Table (Example)-->
+             <table border = "2" style = "color : blue">
+                 <tr>
+                     <th> Header Column 1 </th>
+                     <th> Header Column 2 </th>
+                     <th> Header Column 3 </th>
+                     <th> Header Column 4 </th>
+                 </tr>
+
+                 <tr>
+                     <td> Row 2 - Item 1</td>
+                     <td> Row 2 - Item 2 </td>
+                     <th rowspan="2">
+                          Row 2 - Nested Table 1 
+                          <br> <br>
+                         <table border="2" style = "color : Green">
+                             <tr>
+                                 <th> Row 1 Header </th>
+                                 <td> Item </td>
+                             </tr>
+
+                             <tr>
+                                <th> Row 1 Header </th>
+                                <td> Item </td>
+                            </tr>
+
+                            <tr>
+                                <th> Row 1 Header </th>
+                                <td> Item </td>
+                            </tr>
+                         </table>
+                        </th>
+                     <td> Row 2 - Item 4</td>
+                 </tr>
+
+                 <tr>
+                     <th>
+                         Row 3 - Nested Table 2
+                         <br> <br>
+                         <table border = "2" style = "color : red">
+                             <tr>
+                                 <th> Row 1 Header </th>
+                                 <td> Item </td>
+                             </tr>
+
+                             <tr>
+                                <th> Row 1 Header </th>
+                                <td> Item </td>
+                            </tr>
+                         </table>
+                     </th>
+                     <td> Row 3 - Item 2 </td>
+                     <td rowspan = "2"> Row 3 - Item 3 </td>
+                 </tr>
+
+                 <tr>
+                     <td> Row 4 - Item 1 </td>
+                     <td> Row 4 - Item 2 </td>
+                     <td> Row 4 - Item 3 </td>
+                 </tr>
+
+                 <tr>
+                     <td colspan = "4"> Row 5 - Last Row Of Outer Table </td>
+                 </tr>
+             </table>
+        </body>
+    </head>
+</html>
